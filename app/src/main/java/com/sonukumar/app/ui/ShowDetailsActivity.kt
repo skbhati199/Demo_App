@@ -24,12 +24,21 @@ class ShowDetailsActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = DataBindingUtil.setContentView(this, R.layout.activity_show_details)
-        articleModel = intent.getSerializableExtra("data") as ArticleModel
-        binding?.articleModel = articleModel
-        viewModel = ViewModelProviders.of(this).get(DetailViewModel::class.java!!)
+
+        var title = intent.getStringExtra("title");
+        var published_date = intent.getStringExtra("published_date");
+        var abstract_data = intent.getStringExtra("abstract_data");
+        var url = intent.getStringExtra("url");
+
+        binding?.title?.text = title
+        binding?.publishDate?.text = published_date
+        binding?.abstractData?.text = abstract_data
+
+
+
 
         Glide.with(binding?.profileImage?.getContext()!!)
-            .load(articleModel!!.media!![0].media_metadata!![3].url)
+            .load(url)
             .diskCacheStrategy(DiskCacheStrategy.ALL)
             .into(binding?.profileImage!!)
 

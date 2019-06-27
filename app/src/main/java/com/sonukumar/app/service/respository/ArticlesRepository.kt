@@ -15,7 +15,7 @@ import retrofit2.converter.gson.GsonConverterFactory
  */
 
 class ArticlesRepository {
-    private val API_NY_TIMES_URL = "http://api.nytimes.com/"
+    private val API_NY_TIMES_URL = "https://api.nytimes.com/"
     private var nyTimeService: NYTimeService?=null
 
     init {

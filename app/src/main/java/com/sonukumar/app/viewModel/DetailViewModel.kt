@@ -15,6 +15,6 @@ import com.sonukumar.app.service.respository.ArticlesRepository
  * Created by Sonu Kumar on 6/27/2019.
  */
 
-class DetailViewModel(application: Application, periodId: Int, apiKey:String): AndroidViewModel(application) {
+class DetailViewModel(application: Application): AndroidViewModel(application) {
 
 }

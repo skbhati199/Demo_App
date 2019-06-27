@@ -1,4 +1,4 @@
-# #  NYTIMES API DEMO
+#  NYTIMES API DEMO
 
 ------------
 

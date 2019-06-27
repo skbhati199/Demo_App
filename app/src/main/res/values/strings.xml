@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">NY Times App</string>
+    <string name="title_activity_show_details">Show Details</string>
+</resources>

@@ -35,6 +35,6 @@
 
 ###### Screen Shots
 
-![Home Screen](./screen/1.jpg "Home")
-![Details Screen](./screen/1.jpg "Details Screen")
+![Home Screen](./screen/1.png "Home")
+![Details Screen](./screen/1.png "Details Screen")
 
